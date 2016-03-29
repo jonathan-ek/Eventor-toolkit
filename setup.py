@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 from codecs import open
 from os import path
@@ -12,7 +12,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='Eventor-toolkit',
+    name='eventortoolkit',
     version='0.1',
     description='Interface for easier use of eventor API.',
     long_description=long_description,
@@ -40,7 +40,7 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     keywords='Eventor orienteering development',
-    py_modules=['Eventor-toolkit'],
+    py_modules=['eventortoolkit'],
     install_requires=[
         'requests',
         'xmltodict'
