@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 from codecs import open
 from os import path
@@ -12,8 +12,8 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='eventortoolkit',
-    version='0.1.1',
+    name='Eventor-toolkit',
+    version='1.0.0',
     description='Interface for easier use of eventor API.',
     long_description=long_description,
     author='Jonathan Anderson',
@@ -21,10 +21,6 @@ setup(
     license='MIT',
     url='https://github.com/andersonjonathan/Eventor-toolkit',
     classifiers=[
-        # How mature is this project? Common values are
-        #   3 - Alpha
-        #   4 - Beta
-        #   5 - Production/Stable
         'Development Status :: 5 - Production/Stable',
 
         'Intended Audience :: Developers',
@@ -40,7 +36,7 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     keywords='Eventor orienteering development',
-    py_modules=['eventortoolkit'],
+    py_modules=['Eventor-toolkit'],
     install_requires=[
         'requests',
         'xmltodict'
