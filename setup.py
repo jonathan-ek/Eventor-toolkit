@@ -40,7 +40,7 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     keywords='Eventor orienteering development',
-    packages=['Eventor-toolkit'],
+    py_modules=['Eventor-toolkit'],
     install_requires=[
         'requests',
         'xmltodict'
