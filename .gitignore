@@ -2,7 +2,7 @@
 *.sw[po]
 *.bak
 *.orig
-
+.idea
 .project
 .pydevproject
 
