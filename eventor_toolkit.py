@@ -275,7 +275,8 @@ class Eventor:
         else:
             icd = 'false'
         q = {'includeContactDetails': icd}
-        return self._execute('persons/organisations/{organisation_id}'.format(organisation_id=organisation_id), q)
+        url = 'persons/organisations/{organisation_id}'.format(organisation_id=organisation_id)
+        return self._execute(url, q)['PersonList']['Person']
 
     def competitors(self, organisation_id):
         """
@@ -292,7 +293,7 @@ class Eventor:
         CompetitorList
         """
         q = {'organisationId': organisation_id}
-        return self._execute('competitors', q)
+        return self._execute('competitors', q)['CompetitorList']['Competitor']
 
     def external_login_url(self, person_id, organisation_id, include_contact_details=False):
         """
