@@ -13,7 +13,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='eventortoolkit',
-    version='0.1',
+    version='0.1.1',
     description='Interface for easier use of eventor API.',
     long_description=long_description,
     author='Jonathan Anderson',
