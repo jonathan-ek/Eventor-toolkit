@@ -1,7 +1,11 @@
+# -*- coding: utf-8 -*-
 import requests
 import xmltodict
 
-from urllib.parse import urlencode
+try:
+    from urllib.parse import urlencode
+except ImportError:
+    from urllib import urlencode
 
 
 def format_list(original):
