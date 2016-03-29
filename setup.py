@@ -13,7 +13,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='Eventor-toolkit',
-    version='1.0.1',
+    version='1.0.2',
     description='Interface for easier use of eventor API.',
     long_description=long_description,
     author='Jonathan Anderson',
@@ -36,7 +36,7 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     keywords='Eventor orienteering development',
-    py_modules=['Eventor-toolkit'],
+    py_modules=['eventor_toolkit'],
     install_requires=[
         'requests',
         'xmltodict'
