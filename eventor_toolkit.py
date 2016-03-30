@@ -237,7 +237,7 @@ class Eventor:
             ip = 'false'
 
         q = {'includeProperties': ip}
-        return self._execute('organisations', q)
+        return self._execute('organisations', q)['OrganisationList']['Organisation']
 
     def organisation(self, organisation_id):
         """
@@ -630,7 +630,10 @@ class Eventor:
             q['eventIds'] = format_list(event_ids)
         if top:
             q['top'] = top
-        return self._execute('results/person', q)
+        try:
+            return self._execute('results/person', q)['ResultListList']['ResultList']
+        except TypeError:
+            return []
 
     def results_per_organisation(self,
                                  organisation_id,
