@@ -27,30 +27,35 @@ class Eventor:
 
     CLASSIFICATION_ID_MAPPING = {
         1: 'mästerskapstävling',
-        2: 'nationell tävlin',
+        2: 'nationell tävling',
         3: 'distriktstävling',
         4: 'närtävling',
         5: 'klubbtävling',
         6: 'internationell tävling'
     }
     EVENT_STATUS_ID_MAPPING = {
-        1: 'Applied',
-        2: 'Approved by region',
-        3: 'Approved',
-        4: 'Created',
-        5: 'Entry opened',
-        6: 'Entry paused',
-        7: 'Entry closed',
-        8: 'Live',
-        9: 'Completed',
-        10: 'Canceled',
-        11: 'Reported'}
+        1: 'ansökt',
+        2: 'godkänt av distriktet',
+        3: 'godkänt',
+        4: 'skapat',
+        5: 'anmälan öppen',
+        6: 'anmälan pausad',
+        7: 'anmälan stängd',
+        8: 'live',
+        9: 'genomförd',
+        10: 'inställt',
+        11: 'rapporterad'}
 
     DISCIPLINE_ID_MAPPING = {
         1: 'orienteringlöpning',
         2: 'MTB-orientering',
         3: 'skidorientering',
         4: 'precisionsorientering'}
+
+    EVENT_FORM_MAPPING = {
+        'IndSingleDay': 'Individuell endagstävling',
+        'IndMultiDay': 'Individuell flerdagarstävling',
+        'RelaySingleDay': 'Stafett endagstävling'}
 
     def __init__(self, api_key):
         self.api_key = api_key
