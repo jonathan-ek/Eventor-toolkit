@@ -53,9 +53,9 @@ class Eventor:
         4: 'precisionsorientering'}
 
     EVENT_FORM_MAPPING = {
-        'IndSingleDay': 'Individuell endagstävling',
-        'IndMultiDay': 'Individuell flerdagarstävling',
-        'RelaySingleDay': 'Stafett endagstävling'}
+        'IndSingleDay': 'individuell endagstävling',
+        'IndMultiDay': 'individuell flerdagarstävling',
+        'RelaySingleDay': 'stafett endagstävling'}
 
     def __init__(self, api_key):
         self.api_key = api_key
