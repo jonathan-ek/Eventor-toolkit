@@ -699,7 +699,10 @@ class Eventor:
              'from': from_date,
              'to': to_date,
              'includeRegistrations': ir}
-        return self._execute('activities', q)['ActivityList']['Activity']
+        try:
+            return self._execute('activities', q)['ActivityList']['Activity']
+        except TypeError:
+            return []
 
     def activity(self, organisation_id, activity_id, include_registrations=False):
         """
