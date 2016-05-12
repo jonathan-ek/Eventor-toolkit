@@ -699,7 +699,7 @@ class Eventor:
              'from': from_date,
              'to': to_date,
              'includeRegistrations': ir}
-        return self._execute('activities', q)
+        return self._execute('activities', q)['ActivityList']['Activity']
 
     def activity(self, organisation_id, activity_id, include_registrations=False):
         """
