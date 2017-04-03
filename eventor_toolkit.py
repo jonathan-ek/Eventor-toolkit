@@ -666,7 +666,7 @@ class Eventor:
         else:
             ist = 'false'
 
-        q = {'organisationIds': format_list(organisation_id),
+        q = {'organisationIds': organisation_id,
              'includeSplitTimes': ist}
 
         if event_id:
